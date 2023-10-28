@@ -43,3 +43,59 @@ int vet[5] = {1, 2, 3};
 // Declara um vetor de inteiros com 5 posições e o inicializa com os valores 1, 2, 3, 0, 0
 ```
 
+## Valores de um vetor
+
+Podemos acessar o valor de um vetor passando o nome do vetor e o índice do valor entre colchetes. Exemplo:
+
+```
+int vet[5] = {1,2,3,4,5};
+
+printf("%d %d %d %d %d\n", vet[0], vet[1], vet[2], vet[3], vet[4])
+// Imprime na saída padrão os valores guardados no vetor 'vet', ou seja, 1 2 3 4 5
+// Lembrando que a primeira posição de um vetor tem índice 0
+```
+
+Um método mais eficiente para acessar os valores de um vetor é por meio das estruturas de repetição. Exemplo:
+
+```
+int vet[5] = {1, 2, 3, 4, 5}, j = 0;
+
+for (int i = 0; i < 5; i++)
+{
+	printf("%d ", vet[i]);
+}
+
+printf("\n");
+
+while (j < 5)
+{
+	printf("%d ", vet[i]);
+	j++;
+}
+
+printf("\n");
+
+// O while e o for neste código são equivalentes, ambos imprimirão na saída padrão:
+// 1 2 3 4 5
+```
+
+Para armazernar valores vindos do usuário no vetor ainda usamos o scanf(), passando junto com o & o nome do vetor e o índice entre colchetes. Pode-se utilizar estruturas de repetição para obter vários valores também. Exemplo:
+
+```
+int vet[10];
+
+for (int i = 0; i < 10; i++)
+{
+	scanf("%d", &vet[i]);
+}
+
+for (int i = 0; i < 10; i++)
+{
+	printf("%d ", vet[i]);
+}
+
+printf("\n");
+
+// Obtem valores para cada posição do vetor e depois imprime esses valores
+```
+
